@@ -6,5 +6,7 @@
         <p>{{ article.author }} | {{ article.date }}</p>
         <p>{{ article.body }}</p>
     </div>
+
+    <p><a href="{% url 'article_edit' article.pk %}">Edit</a></p>
     
 {% endblock content %}
