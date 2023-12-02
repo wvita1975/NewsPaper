@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="article-entry">
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.author }} | {{ article.date }}</p>
+        <p>{{ article.body }}</p>
+    </div>
+    
+{% endblock content %}
