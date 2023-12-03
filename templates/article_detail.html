@@ -7,6 +7,10 @@
         <p>{{ article.body }}</p>
     </div>
 
-    <p><a href="{% url 'article_edit' article.pk %}">Edit</a></p>
-    
+    <p> <a href="{% url 'article_edit' article.pk %}">Edit</a>
+        <a href="{% url 'article_delete' article.pk %}">Delete</a>
+    </p>
+  
+    <p>Back to<a href="{% url 'article_list' %}"> articles</a>.</p>
+
 {% endblock content %}
